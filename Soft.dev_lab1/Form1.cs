@@ -77,7 +77,7 @@ namespace Soft.dev_lab1
             "Выйти из программы?",
             "Внимание",
             MessageBoxButtons.YesNo,
-            MessageBoxIcon.Error,
+            MessageBoxIcon.Information,
             MessageBoxDefaultButton.Button1,
             MessageBoxOptions.DefaultDesktopOnly);
             if (result == System.Windows.Forms.DialogResult.No)
