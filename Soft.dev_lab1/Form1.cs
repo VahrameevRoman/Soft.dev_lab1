@@ -65,24 +65,10 @@ namespace Soft.dev_lab1
             double b = double.Parse(textBoxB.Text);
             double alpha = double.Parse(textBoxAlpha.Text);
             double result = Math.Round(a * b * Math.Sin(alpha/57.2958), 5);
-            if (result > 0)
-            {
-                labelS.Visible = true;
-                textBoxS.Visible = true;
-                textBoxS.Text = Convert.ToString(result);
-            }
-            else
-            {
-                labelS.Visible = false;
-                textBoxS.Visible = false;
-                MessageBox.Show(
-                "Параллелограмма с введёнными переменными не может существовать.",
-                "Ошибка",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error,
-                MessageBoxDefaultButton.Button1,
-                MessageBoxOptions.DefaultDesktopOnly);
-            }
+
+            labelS.Visible = true;
+            textBoxS.Visible = true;
+            textBoxS.Text = Convert.ToString(result);
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
